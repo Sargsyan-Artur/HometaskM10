@@ -1,0 +1,7 @@
+**/node_modules
+.idea/
+combined.log
+package-lock.json
+combined.log.2021-07-Su.
+allure-report/
+allure-results/

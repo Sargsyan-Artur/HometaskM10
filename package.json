@@ -1,0 +1,26 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "webdriver-manager update --versions.standalone=3.141.59 --gecko=false",
+    "start-server": "webdriver-manager start --versions.standalone=3.141.59",
+    "rp": "allure generate allure-results --clean -o allure-report && allure open allure-report",
+    "test": "protractor config/protractor.conf.js --environment=dev --instances=1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "allure-commandline": "^2.13.8",
+    "chai": "^4.3.4",
+    "mocha": "^9.0.2",
+    "mocha-allure-reporter": "^1.4.0",
+    "protractor": "^7.0.0",
+    "webdriver-manager": "^12.1.8",
+    "winston": "^3.3.3",
+    "winston-daily-rotate-file": "^4.5.5",
+    "yargs": "^17.0.1"
+  }
+}
